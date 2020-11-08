@@ -1,8 +1,9 @@
 # Binary Tree Visualizer
 A *Binary Tree Visualizer* implemented ***in C.***
-- A combination of **Computer Graphics (CG)** and **Data Structures (DS)** mini projects. 
+- Combination of **Computer Graphics (CG)** and **Data Structures (DS)** mini projects. 
 
 Code for Traversal - [tree_traversal.c](tree_traversal.c) (Part of a Data Structures Project)
+
 Code for Visualizer - [tree_visualization.c](tree_visualization.c)(Part of a Computer Graphics Project)
 
 ## *Features*
