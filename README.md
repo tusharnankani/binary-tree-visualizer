@@ -10,11 +10,13 @@ Code for Visualizer - [tree_visualization.c](tree_visualization.c)(Part of a Com
 Will be using the `graphics.h` *header file* in C.
 
 #### *Functions*
-- `delay()` functio
+- `delay()` function.
 - `putpixel()` function.
 - `cleardevice()` function: [Reference](https://www.geeksforgeeks.org/cleardevice-function-c/)
 - `itoa()` function: [Reference](https://fresh2refresh.com/c-programming/c-type-casting/c-itoa-function/)
 - `outtextxy()` function: [Reference](https://www.geeksforgeeks.org/outtextxy-function-c/) 
+- `circle()`  function: [Reference](https://www.geeksforgeeks.org/draw-circle-c-graphics/)
+- `floodfill()` function: [Reference](https://www.geeksforgeeks.org/setfillstyle-floodfill-c/)
 
 #### *Algorithms*
 - DDA Line Drawing Algorithm 
