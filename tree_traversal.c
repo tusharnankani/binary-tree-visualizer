@@ -27,12 +27,6 @@ struct node* new_qNode(struct t_node* x)
     temp->data=x;
     return temp;
 }
-int q_size(struct node* head)
-{
-    if(!head)
-        return 0;
-    return 1+q_size(head->next);
-}
 //queue functions
 
 
@@ -79,83 +73,6 @@ void Postorder(struct t_node* root)
     Postorder((root->right));
     printf("%d ",root->data);
 }
-
-int height(struct t_node* root)
-{
-    if(!root)
-    {
-        return 0;
-    }
-    int l,r;
-    l=height(root->left);
-    r=height(root->right);
-    if(l>r)
-    {
-        return l+1;
-    }
-    else
-    {
-        return r+1;
-    }
-}
-void d_spaces(int space)
-{
-    for(int i=0;i<space;++i)
-    {
-        printf(" ");
-    }
-}
-
-void display(struct t_node* root)
-{
-    struct node* head=new_qNode(root);
-    struct node* tail=head;
-    int h=(1<<height(root)-1);
-    int internal;
-    int x=1;
-    int spaces=h/2+(h/4)*3+(h/4);
-    if(spaces==1)
-        spaces=3;
-    while(x<=h)
-    {
-        d_spaces(spaces);
-        internal=spaces*2-1;
-        if(x==h)
-            internal=3;
-        int c=0;
-        for(int i=0;i<x;++i)
-        {
-            struct t_node* temp=head->data;
-            printf("%d",temp->data);
-            ++c;
-            if(x!=h)
-                d_spaces(internal);
-            else
-            {
-                if(c&1)
-                    d_spaces(internal);
-                else
-                    printf(" ");
-            }
-            if(temp->left)
-            {
-                tail->next=new_qNode(temp->left);
-                tail=tail->next;
-            }
-            if(temp->right)
-            {
-                tail->next=new_qNode(temp->right);
-                tail=tail->next;
-            }
-            head=head->next;
-        }
-        printf("\n");
-        x*=2;
-        spaces/=2;
-    }
-}
-
-
 /*
 1.       1
 2.   2       3
@@ -208,7 +125,7 @@ int main()
     int c=1,choice;
     while(c)
     {
-        printf("1.In-order Traversal\n2.Pre-order Traversal\n3.Post-order traversal\n4.Display\n5.Exit\nEnter your choice: ");
+        printf("1.In-order Traversal\n2.Pre-order Traversal\n3.Post-order traversal\n4.Exit\nEnter your choice: ");
         scanf("%d",&choice);
         switch(choice)
         {
@@ -231,11 +148,6 @@ int main()
                 break;
             }
             case 4:
-            {
-                display(root);
-                break;
-            }
-            case 5:
             {
                 c=0;
                 break;
