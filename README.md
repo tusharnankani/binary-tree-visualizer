@@ -46,7 +46,7 @@ View the complete demonstration [in this video](assets/complete-demo.mp4).
 
 ![](assets/input.png)
 
-- Displays Pre-Order, In-Order & Post-Order traversals.\
+- Displays Pre-Order, In-Order & Post-Order traversals.
 
 ![](assets/traversals.png)
 
