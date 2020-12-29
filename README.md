@@ -2,12 +2,14 @@
 A *Binary Tree Visualizer* implemented ***in C.***
 - Combination of **Computer Graphics (CG)** and **Data Structures (DS)** mini projects. 
 
+![binary-tree-visualizer-socialify-cover](https://socialify.git.ci/tusharnankani/binary-tree-visualizer/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&language=1&owner=1&pattern=Circuit%20Board&stargazers=1&theme=Dark)
+
 Code for Traversal - [tree_traversal.c](tree_traversal.c) (Part of a Data Structures Project)
 
 Code for Visualizer - [tree_visualization.c](tree_visualization.c)(Part of a Computer Graphics Project)
 
 ## *Demonstration*
-View the complete demonstration [in this video](assets/complete-demo.mp4).
+View the complete demonstration [in this LinkedIn Post](https://www.linkedin.com/posts/tusharnankani_binarytreevisualizer-c-visualization-ugcPost-6735769171239419904-YiiR) or [in this video](assets/complete-demo.mp4).
 
 ![tree_traversal_gif](assets/tree.gif)
 
